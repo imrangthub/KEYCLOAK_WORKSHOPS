@@ -3,3 +3,18 @@ server:
 spring:
   application:
     name: spring-boot-client-app
+  security:
+    oauth2:
+      client:
+        registration:
+          spring-boot-client-app:
+            client-id: spring-boot-client-app
+            client-secret: 2525c691-5d8b-4021-9131-c63050020551
+            scope: openid, profile, roles
+            authorization-grant-type: client_credentials
+        provider:
+          spring-boot-client-app:
+            issuer-uri: http://localhost:8080/auth/realms/master
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/auth/realms/master
