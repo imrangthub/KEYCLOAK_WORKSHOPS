@@ -42,4 +42,6 @@ public class GlobalSecurityConfiguration extends KeycloakWebSecurityConfigurerAd
                 .authenticated();
     }
     
+    
+    
 }
