@@ -89,3 +89,18 @@ http://localhost:8080/auth/realms/SpringBootRealm/protocol/saml/descriptor
 
 
 http://localhost:8080/auth/realms/SpringBootRealm/.well-known/openid-configuration
+
+
+Get Token( Grant Types: password)
+
+http://localhost:8080/auth/realms/SpringBootRealm/protocol/openid-connect/token
+
+Request Body:
+
+                  grant_type:password
+                  client_id:spring-boot-client-app-cliendid
+                  username:imranmdbar
+                  password:12345
+                  
+![image](https://user-images.githubusercontent.com/32607915/140271841-e8eecc18-98ad-45d4-99ba-7618e661b7b7.png)
+
