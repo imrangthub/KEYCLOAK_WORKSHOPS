@@ -67,3 +67,25 @@ You need to do two things - replace the KeycloakDS data source and the database 
 Step 7: Database configuration
 
 Step 8: Restarting Keycloak server
+
+
+Get Token
+======================================
+
+1) Set up a user
+
+![image](https://user-images.githubusercontent.com/32607915/140270039-1332b2e8-c8e9-49f5-98a4-615f40959997.png)
+
+3) Set up a client
+
+![image](https://user-images.githubusercontent.com/32607915/140270093-6bb8c705-e465-4e8c-b712-d5d0be0b6753.png)
+
+![image](https://user-images.githubusercontent.com/32607915/140270410-df3fd632-af02-479b-b42d-134e164943a6.png)
+
+
+
+
+http://localhost:8080/auth/realms/SpringBootRealm/protocol/saml/descriptor
+
+
+http://localhost:8080/auth/realms/SpringBootRealm/.well-known/openid-configuration
