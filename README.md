@@ -1,6 +1,10 @@
 # KEYCLOAK_WORKSHOPS
 
+App Info
+-------------
+
 keycloak-15.0.2
+
 mysql-connector-java-8.0.20.jar
 
 Run keycloak server
