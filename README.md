@@ -110,3 +110,24 @@ Request Body:
                   
 ![image](https://user-images.githubusercontent.com/32607915/140271841-e8eecc18-98ad-45d4-99ba-7618e661b7b7.png)
 
+
+
+Get Token( Grant Types: client_credentials )
+
+Create a client or update exist client
+![image](https://user-images.githubusercontent.com/32607915/140301082-81555ed3-2715-496e-a64b-2a6c6cfd1aa4.png)
+
+
+Use client secret
+
+![image](https://user-images.githubusercontent.com/32607915/140301227-7499c2e0-859a-4def-8862-01926f1edebf.png)
+
+Get Token: 
+
+http://localhost:8080/auth/realms/SpringBootRealm/protocol/openid-connect/token
+
+
+![image](https://user-images.githubusercontent.com/32607915/140301420-0fd117c7-4856-45a8-95f6-9c62d49a556d.png)
+
+
+
