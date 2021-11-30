@@ -1,5 +1,11 @@
 # KEYCLOAK_WORKSHOPS
 
+App Info
+-------------
+
+keycloak-15.0.2
+
+mysql-connector-java-8.0.20.jar
 
 Run keycloak server
 
@@ -67,3 +73,61 @@ You need to do two things - replace the KeycloakDS data source and the database 
 Step 7: Database configuration
 
 Step 8: Restarting Keycloak server
+
+
+Get Token
+======================================
+
+1) Set up a user
+
+![image](https://user-images.githubusercontent.com/32607915/140270039-1332b2e8-c8e9-49f5-98a4-615f40959997.png)
+
+3) Set up a client
+
+![image](https://user-images.githubusercontent.com/32607915/140270093-6bb8c705-e465-4e8c-b712-d5d0be0b6753.png)
+
+![image](https://user-images.githubusercontent.com/32607915/140270410-df3fd632-af02-479b-b42d-134e164943a6.png)
+
+
+
+
+http://localhost:8080/auth/realms/SpringBootRealm/protocol/saml/descriptor
+
+
+http://localhost:8080/auth/realms/SpringBootRealm/.well-known/openid-configuration
+
+
+Get Token( Grant Types: password)
+
+http://localhost:8080/auth/realms/SpringBootRealm/protocol/openid-connect/token
+
+Request Body:
+
+                  grant_type:password
+                  client_id:spring-boot-client-app-cliendid
+                  username:imranmdbar
+                  password:12345
+                  
+![image](https://user-images.githubusercontent.com/32607915/140271841-e8eecc18-98ad-45d4-99ba-7618e661b7b7.png)
+
+
+
+Get Token( Grant Types: client_credentials )
+
+Create a client or update exist client
+![image](https://user-images.githubusercontent.com/32607915/140301082-81555ed3-2715-496e-a64b-2a6c6cfd1aa4.png)
+
+
+Use client secret
+
+![image](https://user-images.githubusercontent.com/32607915/140301227-7499c2e0-859a-4def-8862-01926f1edebf.png)
+
+Get Token: 
+
+http://localhost:8080/auth/realms/SpringBootRealm/protocol/openid-connect/token
+
+
+![image](https://user-images.githubusercontent.com/32607915/140301420-0fd117c7-4856-45a8-95f6-9c62d49a556d.png)
+
+
+
