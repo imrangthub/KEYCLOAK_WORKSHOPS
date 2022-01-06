@@ -25,6 +25,7 @@ MySQL Connector for Java
 Step 1: Create a database in MySQL
 
       =>CREATE DATABASE keycloakdb CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+      May Or
       =>ALTER DATABASE testdb CHARACTER SET utf8 COLLATE utf8_general_ci;
       =>SHOW CHARACTER SET WHERE CHARSET = 'utf8';
       
