@@ -20,7 +20,7 @@ target/
  
 # Windows image file caches
 Thumbs.db 
- 
+
 # Folder config file
 Desktop.ini
  
@@ -42,8 +42,9 @@ Desktop.ini
 ######################
 # Eclipse
 ######################
- .project
+ 
 *.pydevproject
+.project
 .metadata
 bin/**
 tmp/**
@@ -53,7 +54,7 @@ tmp/**/*
 *.swp
 *~.nib
 local.properties
-.classpath
+*.classpath
 .settings/
 .loadpath
 /src/main/resources/rebel.xml
@@ -68,3 +69,10 @@ local.properties
  
 # PDT-specific
 .buildpath
+
+#idea realted
+*.iml
+.idea/
+.idea/*
+
+/logs/*
